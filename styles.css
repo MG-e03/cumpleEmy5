@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('assets/gabbys.jpg'); /* Asegúrate de tener una imagen en la carpeta 'assets' */
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.header{
+    
+        width: 100%;
+        height: 160px;
+        background-image: url('assets/gabby3.jpeg'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(252, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        position: relative;
+        text-shadow: 0 0 3px black;
+        box-shadow: 0 0 2px rgba(30, 203, 247, 0.877);
+    
+    
+}
+
+.NomEmy {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 26px; 
+    padding: 10px; 
+    border-radius: 9px; 
+    background: linear-gradient(rgb(219, 19, 176) rgb(211, 12, 168));
+    text-shadow: 3px 3px 10px rgba(2, 2, 2, 0.5);
+    background-clip: text;
+    padding: 10px;
+    }
+
+.container {
+    background: rgba(204, 183, 183, 0.8);
+    padding: 20px; /* Ajuste para un poco más de espacio */
+    border-radius: 40px;
+    text-align: center;
+    border: none;
+    width: 90%; /* Ajustado a un ancho más adecuado */
+    max-width: 400px; /* Máximo ancho para pantallas grandes */
+    margin: 30px;
+    box-shadow: 0 4px 15px rgba(7, 7, 7, 0.2);
+    color: bisque;
+    text-shadow: 0 0 10px rgba(128, 0, 128, 0.8);
+    font-family: 'Montserrat', sans-serif;
+    color: white; 
+    
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(39, 187, 187);
+    border-radius: 8px; /* Esquinas redondeadas para los inputs */
+}
+
+/* Estilos de botones */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none; /* Sin borde por defecto */
+    border-radius: 8px; /* Esquinas redondeadas para los botones */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+
+.Siconfirm-btn {
+    background-color: rgb(20, 20, 20);
+    color: rgb(253, 253, 253); /* Color del texto */
+    border-radius: 20px;
+}
+
+
+.Siconfirm-btn:hover {
+    background-color: rgb(224, 17, 104); /* Morado */
+}
+
+
+.NoconfBtn {
+    background-color: rgb(5, 5, 5);
+    color: rgb(253, 253, 253); /* Color del texto */
+    border-radius: 20px;
+}
+
+
+.NoconfBtn:hover {
+    background-color: rgb(224, 17, 104); /* Morado */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 40px;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 300px;
+    justify-content: center;
+}
+
+#closeModalBtn {
+    background-color: #6a0dad;
+    color: white;
+    justify-content: center;
+}
+
+
+
+
+#adult-list {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    #adult-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* Media Queries para ajustar el tamaño de la fuente en diferentes pantallas */
+@media (max-width: 1200px) {
+    .NomEmy {
+        font-size: 24px; /* Tamaño para pantallas grandes */
+    }
+}
+
+@media (max-width: 992px) {
+    .NomEmy {
+        font-size: 22px; /* Tamaño para pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .NomEmy {
+        font-size: 20px; /* Tamaño para tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .NomEmy {
+        font-size: 18px; /* Tamaño para móviles */
+    }
+}

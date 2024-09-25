@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    background-color: #f9f9f9; /* Fondo claro */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centrar el contenedor */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(238, 9, 226, 0.1); /* Sombra ligera */
+}
+
+h1 {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border-radius: 10px; 
+    color: rgb(136, 21, 212); 
+}
+
+h2 {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px; 
+    margin-bottom: 10px; 
+    padding: 8px; 
+    color: rgb(255, 255, 255);  
+    text-shadow: 
+        -1px -1px 0px rgb(96, 18, 148),  
+        1px -1px 0px rgb(11, 163, 233),
+        -1px 1px 0px rgb(236, 14, 181),
+        1px 1px 0px rgb(122, 8, 175); 
+        
+        
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px; 
+    padding: 6px;
+    border-radius: 20px; 
+    color: rgb(224, 154, 224);
+    text-shadow: 
+        -1px -1px 0px rgb(96, 18, 148),  
+        1px -1px 0px rgb(11, 163, 233),
+        -1px 1px 0px rgb(236, 14, 181),
+        1px 1px 0px rgb(122, 8, 175); 
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px; 
+    padding: 6px;
+    border-radius: 20px; 
+    color: rgb(198, 168, 216);
+    border: 5px;
+    text-shadow: 
+        -1px -1px 0px rgb(96, 18, 148),  
+        1px -1px 0px rgb(118, 3, 146),
+        -1px 1px 0px rgb(236, 14, 181),
+        1px 1px 0px rgb(122, 8, 175); 
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px; 
+    padding: 6px;
+    border-radius: 20px; 
+    color: rgb(14, 13, 14);
+    border: 5px;
+}
+
+.gallery {
+    display: flex; /* Utiliza flexbox para alinear las imágenes en fila */
+    overflow: hidden; /* Oculta el desbordamiento */
+    width: 100%; /* Asegúrate de que la galería ocupe el 100% del ancho */
+    justify-content: center; /* Centra las imágenes dentro de la galería */
+}
+
+.gallery img {
+    flex: 0 0 auto; /* Las imágenes no crecerán ni se encogerán */
+    width: 90px; /* Establece un ancho fijo para las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 10px; /* Espaciado entre las imágenes */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.gallery img:hover {
+    transform: translateX(10px); /* Desplaza la imagen a la derecha al hacer hover */
+}
+
+#map {
+    width: 100%; /* Ancho completo para el mapa */
+    height: 400px; /* Altura del mapa */
+    border: 1px solid #ccc; /* Borde del mapa */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+#greetingMessage {
+    font-weight: 600;
+    color: #f1f1f1; /* Cambia este código de color por el que desees */
+    text-shadow: 0 0 10px rgba(128, 0, 128, 0.8);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel {
+    position: relative;
+    max-width: 200px; /* Corregido: Ancho máximo del carrusel */
+    margin: auto;
+    overflow: hidden; /* Esconde las imágenes fuera de la vista */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease; /* Animación suave al cambiar de imagen */
+}
+
+.carousel img {
+    width: 100%; /* Las imágenes ocupan el 100% del ancho del carrusel */
+    min-width: 100%; /* Cada imagen tiene un ancho mínimo del 100% */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px; 
+}
+
+.next {
+    right: 10px; 
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1); 
+ }

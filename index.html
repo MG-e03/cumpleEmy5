@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Cumpleaños Emily Díaz Gutiérrez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="NomEmy">
+            <h1>Emily Estefanía Díaz Gutiérrez</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Te Invito a mi Cumpleaños </h1>
+        <form id="confirmForm">
+            <label for="adultNames"></label>
+            <input type="text" id="adultNames" placeholder="Nombre de adultos" required>
+
+            <label for="childName"></label>
+            <input type="text" id="childName" placeholder="Nombre de tu Hijo" required>
+
+            <div class="button-container">
+                <button type="button" class="Siconfirm-btn">Confirmar Asistencia</button>
+                <button type="button" class="NoconfBtn">No Asistiré</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="noConfirmModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <p>Si puedes avisale a mi mamá! nos vemos en otra oportunidad, ¡gracias!</p>
+            
+            <button id="closeModalBtn">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
